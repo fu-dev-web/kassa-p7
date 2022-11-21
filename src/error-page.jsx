@@ -11,6 +11,8 @@ export default function ErrorPage(){
             <p>
                 <i>(error.statusTest || error.message)</i>
             </p>
+            
+        
         </div>
     )
 
