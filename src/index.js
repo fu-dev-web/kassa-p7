@@ -5,6 +5,7 @@ import ErrorPage from './error-page';
 import './index.css';
 import Home from './components/Home';
 import reportWebVitals from './reportWebVitals';
+import FicheLogement from './components/FicheLogement';
 import Root from './routes/Root';
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
                {
                     path: '/about',
                     element: <Home />,
+               },
+               {
+                    path: 'ficheLogement/:id',
+                    element: <FicheLogement />,
                },
           ],
      },

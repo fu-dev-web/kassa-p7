@@ -1,10 +1,15 @@
 import '../App.css';
-// import infoLogement from '../data/kassa.json';
+import appartments from '../data/kassa.json';
 import BannerImg from '../assets/Home/bannerImg.png'
 import "../styles/home.css"
+import {Link} from "react-router-dom";
+// import React, { useState } from 'react';
 
 
 function App() {
+
+  
+
   return (
       
     <main className='home'>
@@ -14,6 +19,16 @@ function App() {
           <img src={BannerImg} alt="décor naturel" />
           </div>
         </section>
+        <article className='card-background'>  
+        {appartments.map((element) => (
+          <Link to={"FicheLogement/" + element.id} className='card-wrapper' key={element.id}>
+            <img src={element.pictures[0]} alt={element.description} className='card-img'></img>
+            <div className='cartd-txt-wrapper'>
+              <span className='card-txt'>{element.title}</span>
+            </div>
+          </Link>
+          ))}
+        </article>
         
     </main>
   );
