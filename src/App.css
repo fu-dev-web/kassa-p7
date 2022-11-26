@@ -1,38 +1,53 @@
 .App {
-  text-align: center;
+     text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ERROR PAGE */
+
+.response-status-code {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 288px;
+     line-height: 142.6%;
+     display: flex;
+     align-items: center;
+     text-align: center;
+     color: #ff6060;
+     margin: auto;
+     flex-wrap: nowrap;
+     align-content: center;
+     justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.error-message {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 36px;
+     line-height: 142.6%;
+     /* or 51px */
+
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+
+     color: #ff6060;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.return-home {
+     margin-top: 13.93%;
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 142.6%;
+     /* identical to box height, or 26px */
 
-.App-link {
-  color: #61dafb;
-}
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+     text-decoration-line: underline;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+     color: #ff6060;
 }

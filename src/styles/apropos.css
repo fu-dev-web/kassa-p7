@@ -1,0 +1,62 @@
+.unfold-wrapper {
+     display: flex;
+     flex-direction: column;
+     margin: 2% 0%;
+     width: 1023px;
+}
+
+.unfold-title {
+     /* margin: 1% 5% 0%; */
+     height: 47px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+
+     background: #ff6060;
+     border-radius: 5px;
+}
+
+.unfold-title p {
+     margin: 0%;
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 142.6%;
+     /* or 34px */
+
+     color: #ffffff;
+     padding: 1%;
+}
+
+.unfold-title button {
+     border: transparent;
+     background-color: transparent;
+     padding: 1%;
+}
+
+.unfold-title img {
+     padding: 1%;
+}
+
+.unfold-content {
+     width: auto;
+     /* margin: 0% 5%; */
+     background: #f7f7f7;
+     border-radius: 5px;
+     display: flex;
+     text-align: start;
+}
+
+.unfold-content p {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 142.6%;
+     /* or 34px */
+     padding: 1% 1% 0% 1%;
+
+     color: #ff6060;
+}
