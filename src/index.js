@@ -6,19 +6,14 @@ import './index.css';
 import Home from './components/Home';
 import Apropos from './components/Apropos';
 import Root from './routes/Root';
+import FicheLogement from './components/FicheLogement';
 
 const router = createBrowserRouter([
      {
           path: '/',
           element: <Root />,
           errorElement: <ErrorPage />,
-          // headerElement: <Header />,
-          // loader: rootLoader,
           children: [
-               // {
-               //      path: 'contacts/:contactId',
-               //      // element: <Contact />,
-               // },
                {
                     path: '/',
                     element: <Home />,
@@ -27,16 +22,12 @@ const router = createBrowserRouter([
                     path: '/about',
                     element: <Apropos />,
                },
-               // {
-               //      path: 'ficheLogement/:id',
-               //      element: <FicheLogement />,
-               // },
+               {
+                    path: 'ficheLogement/:id',
+                    element: <FicheLogement />,
+               },
           ],
      },
-     // {
-     //      path: '/about',
-     //      element: <Home />,
-     // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
