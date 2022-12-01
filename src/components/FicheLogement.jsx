@@ -12,21 +12,21 @@ export default function FicheLogement(){
 
     const {id} = useParams();
     let info = infoLogement.find(e => e.id === id);
-    let photos = Object.values(info.pictures);
+    // let photos = Object.values(info.pictures);
     let tags = Object.values(info.tags);
     let dec = () => {
         const lastPos = count === 0; 
-        const newPos = lastPos ? photos.length - 1 : count - 1;
+        const newPos = lastPos ? info.pictures.length - 1 : count - 1;
         setCount(newPos);
     }
-    let aug = () => (setCount((count + 1)%photos.length));
+    let aug = () => (setCount((count + 1)%info.pictures.length));
 
 
     return (
         <main>
-            { photos.length === 1 ? (
+            { info.pictures.length === 1 ? (
                 <div className="slider-photo" style={{top: "0%"}}>
-                    <img src={photos[count]} alt=""></img>
+                    <img src={info.pictures[count]} alt=""></img>
                 </div>
             ) : (
                 <div className="slider-container">
@@ -36,10 +36,10 @@ export default function FicheLogement(){
                         <button onClick={aug} id="rightArrow">
                             <img src={rightArrow} alt="right arrow" ></img>
                         </button>
-                        <p className="counter">{count + 1}/{photos.length}</p>
+                        <p className="counter">{count + 1}/{info.pictures.length}</p>
                     </div>
                     <div className="slider-photo">
-                        <img src={photos[count]} alt="" className=""></img>
+                        <img src={info.pictures[count]} alt=""></img>
                     </div>
                 </div>
             ) }
@@ -48,6 +48,11 @@ export default function FicheLogement(){
                 <div className="title-container">
                    <div className="title">{info.title}</div>
                    <div className="location">{info.location}</div>
+                   <div className="tags-wrapper">
+                        {tags.map((e, i)=>(
+                            <div className="tags" key={i}> {e}</div>
+                        ))}
+            </div>
                 </div>
                 <div className="landlord-container">
                     <div className="landlord-name">{info.host.name}</div>
@@ -55,11 +60,7 @@ export default function FicheLogement(){
                     < Rating rating = {info.rating} />
                 </div>
             </div>
-            <div className="tags-wrapper">
-                {tags.map((e, i)=>(
-                    <div className="tags" key={i}> {e}</div>
-                ))}
-            </div>
+            
             <div className="info">
                 <DropDown title = "Description" contenu = {info.description} />
                 <DropDown title = "Equipments" equipments = {info.equipments} />

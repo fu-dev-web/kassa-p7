@@ -19,10 +19,10 @@ export default function Root() {
         
         
           <Header />
-          <div>
+          {/* <div> */}
 
           <Outlet />
-          </div>
+          {/* </div> */}
         
         
           <Footer />

@@ -13,7 +13,7 @@ export default function Apropos(){
 
     return (
         <main className="home">
-            <section className="home-section">
+            <section className="home-section" id="apropos-banner">
                 <div className='banner-img'>
                     <img src={FlImgBanner} alt="décor montaignes" />
                 </div>

@@ -4,7 +4,7 @@ import BannerImg from '../assets/Home/bannerImg.png'
 import "../styles/home.css"
 import {Link} from "react-router-dom";
 // import React, { useState } from 'react';
-
+import '../index.css'
 
 function App() {
 

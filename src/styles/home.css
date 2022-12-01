@@ -17,6 +17,7 @@
 }
 
 .banner-text {
+     width: 90%;
      position: absolute;
      font-size: 48px;
      color: #ffffff;
@@ -85,4 +86,35 @@
      padding: 0 20px 15px 15px;
      font-size: 18px;
      color: #ffffff;
+}
+
+@media all and (max-width: 768px) {
+     .home {
+          margin: 2% 2%;
+          height: auto;
+     }
+     .home-section {
+          width: 90%;
+          height: 111px;
+          text-align: left;
+          /* background: #000000;
+          mix-blend-mode: darken; */
+          opacity: 0.9;
+          /* border-radius: 10px; */
+     }
+     .banner-img {
+          width: 100%;
+          height: 100%;
+     }
+     .banner-text {
+          width: 90%;
+          margin: 0% 2%;
+          font-size: 24px;
+     }
+     .card-background {
+          background-color: transparent;
+     }
+     .card-wrapper {
+          margin: 4.5% 0%;
+     }
 }

@@ -75,3 +75,22 @@
      text-align: start;
      padding: 3%;
 }
+
+@media all and (max-width: 768px) {
+     #apropos-banner {
+          width: auto;
+          height: 223px;
+     }
+
+     article {
+          width: 100%;
+          /* margin: 0% 2%; */
+     }
+
+     .unfold-wrapper {
+          margin: 0% 2%;
+     }
+     .unfold-content p {
+          font-size: 12px;
+     }
+}

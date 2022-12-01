@@ -6,16 +6,6 @@ body {
      font-family: 'Montserrat';
 }
 
-/* D-HOME */
-
-.D-Home {
-     position: relative;
-     width: 100%;
-     /* width: 1440px; */
-     height: 1024px;
-     background: #ffffff;
-}
-
 #error-page {
      position: relative;
      width: 100%;
@@ -103,4 +93,66 @@ footer {
      line-height: 142.6%;
 
      color: #ffffff;
+}
+
+@media all and (max-width: 765px) {
+     .header {
+          width: 90%;
+          height: 45px;
+          margin: 2% auto;
+     }
+     .header__logo {
+          height: 47px;
+          width: 145px;
+     }
+     nav {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0%;
+     }
+
+     nav ul {
+          /* background-color: rgb(247, 0, 255); */
+          /* display: flex; */
+          /* align-content: center; */
+          /* width: 1%; */
+          align-items: center;
+          /* text-align: right; */
+          width: 140px;
+          /* height: 17px; */
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: flex-end;
+     }
+
+     nav ul li {
+          width: 100%;
+          padding: 0%;
+     }
+
+     nav ul li a {
+          font-size: 12px;
+          text-decoration-line: underline;
+          text-transform: uppercase;
+     }
+
+     footer {
+          position: relative;
+          width: auto;
+          height: 209px;
+     }
+
+     .footer-logo {
+          width: 122px;
+          height: 39.44px;
+          margin: auto;
+     }
+
+     .footer-text {
+          font-size: 12px;
+     }
 }

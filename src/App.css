@@ -51,3 +51,24 @@
 
      color: #ff6060;
 }
+
+@media all and (max-width: 768px) {
+     .response-status-code {
+          font-size: 96px;
+          width: 198px;
+          height: 99px;
+          margin: 24% auto 12%;
+     }
+     .error-message {
+          font-size: 18px;
+          margin: auto;
+          text-align: center;
+          width: 260px;
+     }
+     .return-home {
+          font-size: 14px;
+          margin: 20% auto;
+          width: 222px;
+          height: 20px;
+     }
+}
